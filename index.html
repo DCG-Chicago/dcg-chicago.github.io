@@ -1,0 +1,12 @@
+---
+layout: post
+---
+
+<div class="posts">
+  {% for post in site.posts %}    
+        {% include post-card.html post=post %}
+    <hr>
+  {% endfor %}
+</div>
+
+<p><a href="{{ '/archives.html' | relative_url }}">View All Archives</a></p>
