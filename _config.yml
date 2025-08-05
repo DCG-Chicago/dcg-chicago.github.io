@@ -23,7 +23,7 @@ email: poc@dcgchicago.org
 description: >- # this means to ignore newlines until "baseurl:"
   Homepage of the DEF CON Group Chicago, a community of hackers and security enthusiasts.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "dcg-chicago.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "dcgchicago.org" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
