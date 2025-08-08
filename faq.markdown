@@ -9,6 +9,10 @@ permalink: /faq/
 
 > The DEF CON Groups were spawned from the annual DEF CON security conference in Las Vegas. The DEF CON Groups (DCGs or DC-Groups) are a gathering point for folks interested in the alternate applications of modern technology, referred to properly as 'hacking'. DCGs are not intended to compete with any other computer groups, such as 2600, but rather to provide yet another gathering place for the discussion of technology and security topics. DCG meetings are open to anyone, regardless of their skill, age, job, gender, etc. DCGs are designed to help you learn new things, meet new people, mentor others in areas you may be strong in, and provide some cohesion within the hacker culture and it's members.
 
+## How is this different than Burbsec?
+
+> We're hoping to bring more presentations and projects to this meetup. Bring your work in progress, your half-baked con talk, or just build something rad with other hackers --- and then come hang out at your closest [Burbsec](https://burbsec.com/) next time they meet. 
+
 ## Isn't there already a DC312 in Chicago?
 
 > Chicago is a huge city with 50 wards and a vibrant hacker scene. It already supports two BSides events, Blue Team Con, THOTCON, and a slew of other awesome community run events like our friends at Burbsec and Chisec -- what's one more meetup between hackers?
