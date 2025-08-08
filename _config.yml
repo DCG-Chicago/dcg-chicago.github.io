@@ -26,6 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://dcgchicago.org" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
+logo: /assets/images/dcgchicago.png # path to your logo image, relative to the root of your site
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
