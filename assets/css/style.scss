@@ -127,6 +127,35 @@ small {
     color: #b0b0b0; // Muted gray for small text
 }
 
+.navigation {
+    background-color: #112233; // Dark navy blue background
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation a {
+    color: #58a6ff; // Light blue for links
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    color: #ff4c4c; // Bright red on hover
+}
+
 @media print, screen and (max-width: 960px) {
     .wrapper {
         width: auto;
