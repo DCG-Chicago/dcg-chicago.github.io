@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  September Meeting 9/2/2025 @ Sulzer Regional Library
-date:   2025-08-04 21:21:36 -0500
+date:   2025-08-18 21:21:36 -0500
 categories: dcg312 meetings
 author: willasaywhat
 tags: announcement
