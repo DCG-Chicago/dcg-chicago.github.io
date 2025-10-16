@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  November Meeting 11/4/2025 @ Sulzer Regional Library
-date:   2025-10-15 21:21:36 -0500
+date:   2025-10-15 10:10:36 -0500
 categories: dcg312 meetings
 author: willasaywhat
 tags: announcement
