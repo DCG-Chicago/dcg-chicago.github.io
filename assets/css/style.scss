@@ -20,6 +20,15 @@ p, ul, ol, table, pre, dl {
     margin: 0 0 20px;
 }
 
+.fa-rss {
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.fa-rss:hover {
+    color: #FFA500;
+}
+
 h1, h2, h3 {
     line-height: 1.1;
 }

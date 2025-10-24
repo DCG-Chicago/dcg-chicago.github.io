@@ -35,6 +35,17 @@ plugins:
 - jekyll-email-protect # obfuscate the poc email address
 - jekyll-feed # generate an RSS feed
 
+# Feed settings
+feed:
+  title: DEF CON Group Chicago Updates
+  description: Latest updates, meetings, and talks from DCG Chicago
+  path: feed.xml
+  posts_limit: 20
+  categories:
+    - meetings
+    - talks
+    - updates
+
 collections:
   posts:
     output: true
