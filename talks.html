@@ -1,0 +1,15 @@
+---
+layout: default
+title: Talks
+permalink: /talks/
+---
+
+<h1>Talks</h1>
+
+<div class="posts">
+  {% assign talks = site.posts | where_exp: "post", "post.categories contains 'talks'" %}
+  {% for post in talks %}
+    {% include post-card.html post=post %}
+    <hr>
+  {% endfor %}
+</div>

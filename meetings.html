@@ -1,0 +1,15 @@
+---
+layout: default
+title: Meetings
+permalink: /meetings/
+---
+
+<h1>Meetings</h1>
+
+<div class="posts">
+  {% assign meetings = site.posts | where_exp: "post", "post.categories contains 'meetings'" %}
+  {% for post in meetings %}
+    {% include post-card.html post=post %}
+    <hr>
+  {% endfor %}
+</div>

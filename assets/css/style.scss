@@ -38,13 +38,12 @@ h1 {
     font-weight: 500;
 }
 
-h1 a {
-    color: #ffffff; // White for headings   
+h2 {
+    font-weight: 500;
 }
 
-h2 {
-    color: #58a6ff; // Light blue for subheadings (Chicago flag blue)
-    font-weight: 500;
+h1, h2 a {
+    color: #ffffff; // White for headings   
 }
 
 h3, h4, h5, h6 {
@@ -153,6 +152,7 @@ small {
     padding: 0;
     display: flex;
     gap: 15px;
+    justify-content: center;
 }
 
 .navigation li {
