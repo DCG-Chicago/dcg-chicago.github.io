@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  September Meeting 9/8/2026 @ Sulzer Regional Library
-date:   2026-08-18 18:00:00 -0500
+date:   2026-07-25 18:00:00 -0500
 categories: dcg312 meetings
 author: willasaywhat
 tags: announcement
 ---
-We'll be at the [Sulzer Regional Library](https://maps.app.goo.gl/s9BvHjHzaQwGrprc9) again on **9/8/26 from 6-7:30pm**.
+We'll be at the [Sulzer Regional Library](https://maps.app.goo.gl/s9BvHjHzaQwGrprc9) again on **9/8/26 from 6-7:30pm** to meet up, talk shop, and see a solid talk hot on the heels of DEF CON 34. Bring your recently acquired badgelife and con swag to show off, and make some new friends! 
 
-We'll have an updated version of **Bullying Your Co-Workers with Phishing Emails** by Mr. Sprawl, freshly back from his talk at BSides 312.
+We'll have an updated version of **Bullying Your Co-Workers with Phishing Emails** by Mr. Sprawl who presented this year at BSides312. We probably have time for one more talk; if anyone has something they're up to share drop it in #speakers on Discord. 
 
 The area around the library has several spots to grab food after the meeting including Small Cheval, Lou Malnatis, Jimmy's Pizza Cafe, Taqueria El Asadero, and several other solid spots.
 
