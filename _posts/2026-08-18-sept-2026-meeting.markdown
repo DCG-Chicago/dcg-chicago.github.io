@@ -6,7 +6,9 @@ categories: dcg312 meetings
 author: willasaywhat
 tags: announcement
 ---
-We'll be at the [Sulzer Regional Library](https://maps.app.goo.gl/s9BvHjHzaQwGrprc9) again on **9/8/26 from 6-7:30pm**. If you'd like to give a talk, present some research, or just show off a cool project be sure to post in ⁠speakers so we can coordinate on the agenda.
+We'll be at the [Sulzer Regional Library](https://maps.app.goo.gl/s9BvHjHzaQwGrprc9) again on **9/8/26 from 6-7:30pm**.
+
+We'll have an updated version of **Bullying Your Co-Workers with Phishing Emails** by Mr. Sprawl, freshly back from his talk at BSides 312.
 
 The area around the library has several spots to grab food after the meeting including Small Cheval, Lou Malnatis, Jimmy's Pizza Cafe, Taqueria El Asadero, and several other solid spots.
 
