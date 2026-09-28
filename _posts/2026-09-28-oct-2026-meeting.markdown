@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  October Meeting 10/13/2026 @ Sulzer Regional Library
-date:   2026-09-28 18:00:00 -0500
+date:   2026-09-27 18:00:00 -0500
 categories: dcg312 meetings
 author: willasaywhat
 tags: announcement
