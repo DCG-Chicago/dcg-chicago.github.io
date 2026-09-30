@@ -1,0 +1,68 @@
+name: Find next month's meeting room
+
+# Searches CPL LibCal for rooms free for the whole meeting window and opens an
+# issue listing proposed dates. Runs on the 1st of each month for the following
+# month; can also be run by hand from the Actions tab with other parameters.
+on:
+  schedule:
+    - cron: "17 15 1 * *" # 1st of the month, ~10am Chicago
+  workflow_dispatch:
+    inputs:
+      month:
+        description: "'next', 'current', or YYYY-MM"
+        default: next
+      weekdays:
+        description: Day(s) of the week, comma-separated
+        default: tuesday
+      start:
+        description: Start time
+        default: 6:00pm
+      end:
+        description: End time
+        default: 7:30pm
+      locations:
+        description: Library name(s) or LibCal id(s), comma-separated
+        default: Sulzer
+      rooms:
+        description: Only rooms whose names contain this text (blank = any room)
+        default: ""
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  find-room:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Search LibCal
+        id: slots
+        uses: willasaywhat/libcal-viewer@main
+        with:
+          locations: ${{ inputs.locations || 'Sulzer' }}
+          weekdays: ${{ inputs.weekdays || 'tuesday' }}
+          start: ${{ inputs.start || '6:00pm' }}
+          end: ${{ inputs.end || '7:30pm' }}
+          month: ${{ inputs.month || 'next' }}
+          rooms: ${{ inputs.rooms }}
+          title-prefix: Meeting room request
+
+      - name: Open or update issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: ${{ steps.slots.outputs.title }}
+          BODY_FILE: ${{ steps.slots.outputs.markdown-file }}
+        run: |
+          existing=$(gh issue list -R "$GITHUB_REPOSITORY" --state open --limit 100 \
+            --json number,title | jq -r --arg t "$TITLE" '.[] | select(.title == $t) | .number' | head -n1)
+          if [ -n "$existing" ]; then
+            {
+              echo "Re-ran the search on $(date -u +%Y-%m-%d). Updated results:"
+              echo
+              cat "$BODY_FILE"
+            } > "$RUNNER_TEMP/comment.md"
+            gh issue comment "$existing" -R "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/comment.md"
+            echo "Commented on existing issue #$existing"
+          else
+            gh issue create -R "$GITHUB_REPOSITORY" --title "$TITLE" --body-file "$BODY_FILE"
+          fi
